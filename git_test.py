@@ -2,7 +2,6 @@
 import subprocess
 import os
 
-subprocess.run(['python3', 'script.py'])
-
 def test_answer():
+    subprocess.run(['python3', 'script.py'])
     assert os.path.isdir('output')
