@@ -9,4 +9,4 @@ dependencies:
   - pip
   - flake8
   - pytest
-  - pyyaml
+  - yaml
