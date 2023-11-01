@@ -31,5 +31,4 @@ jobs:
     # Nouvelle étape pour le test spécifique
     - name: Test build script
       run: |
-        conda activate base
         python script.py
