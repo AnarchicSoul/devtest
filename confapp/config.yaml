@@ -1,1 +1,48 @@
-test: ok
+hosting:
+  aws: false
+  gcp: false
+  azure: false
+  alibaba: false
+  oracle: false
+  digitalocean: false
+  scaleway: false
+  linode: false
+  ovh: false
+  openstack: false
+  onpremise: true
+pytestapp:
+  enable: True
+  version: 0.2.0
+  ingresshost: python.localdev
+mongodb:
+  enable: false
+  version: 0.2.0
+  ingresshost: none
+mongoui:
+  enable: false
+  version: 0.2.0
+  ingresshost: mongoui.localdev
+elasticsearch:
+  enable: false
+  version: 0.2.0
+  ingresshost: none
+kibana:
+  enable: false
+  version: 0.2.0
+  ingresshost: kibana.localdev
+metricbeat:
+  enable: false
+  version: 0.2.0
+  ingresshost: none
+filebeat:
+  enable: false
+  version: 0.2.0
+  ingresshost: none
+logstash:
+  enable: false
+  version: 0.2.0
+  ingresshost: none
+elasticapm:
+  enable: false
+  version: 0.2.0
+  ingresshost: none
