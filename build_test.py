@@ -1,7 +1,11 @@
 import os
+import shutil
+import yaml
+import pytest
 from script import get_hosting_type, create_output_dir, copy_files
 
 # Crée un répertoire temporaire pour les tests
+@pytest.fixture
 def temp_output_dir(tmp_path):
     return tmp_path / "output"
 
@@ -32,3 +36,7 @@ def test_copy_files(temp_output_dir):
     with open(os.path.join(temp_output_dir, "onpremise", "app1.value"), "r") as f:
         content = f.read()
         assert "ingresshost = 'example.com'" in content
+
+# Exécute les tests si le script est exécuté directement
+if __name__ == "__main__":
+    pytest.main()
